@@ -78,12 +78,78 @@
                     <view key="view" contentMode="scaleToFill" id="XTN-H4-bYA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBa-N3-uqP">
+                                <rect key="frame" x="0.0" y="0.0" width="86" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="3jv-5o-AR8"/>
+                                    <constraint firstAttribute="height" constant="55" id="l9f-4Q-OOb"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="fmW-dr-9g2" eventType="touchUpInside" id="YLl-1O-MRk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLh-7U-qO3">
+                                <rect key="frame" x="131" y="318" width="113" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="YSj-FH-gkE"/>
+                                    <constraint firstAttribute="height" constant="30" id="reO-rW-17Q"/>
+                                </constraints>
+                                <state key="normal" title="Load 3rd Screen"/>
+                                <connections>
+                                    <action selector="load3rdScreenPressed:" destination="fmW-dr-9g2" eventType="touchUpInside" id="pvk-7S-pSG"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mLh-7U-qO3" firstAttribute="centerX" secondItem="XTN-H4-bYA" secondAttribute="centerX" id="6hg-YV-Zon"/>
+                            <constraint firstItem="dBa-N3-uqP" firstAttribute="leading" secondItem="XTN-H4-bYA" secondAttribute="leading" id="DFD-hR-cxu"/>
+                            <constraint firstItem="mLh-7U-qO3" firstAttribute="centerY" secondItem="XTN-H4-bYA" secondAttribute="centerY" id="q2Q-bh-odk"/>
+                            <constraint firstItem="dBa-N3-uqP" firstAttribute="top" secondItem="XTN-H4-bYA" secondAttribute="top" id="y4n-iE-uJJ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="fA6-mL-2bg" kind="showDetail" identifier="PlaySongViewController" id="jKN-3H-Z5N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JCm-Iu-GrF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="837.60000000000002" y="36.431784107946029"/>
+        </scene>
+        <!--Play Song View Controller-->
+        <scene sceneID="niR-tu-FBq">
+            <objects>
+                <viewController id="fA6-mL-2bg" customClass="PlaySongViewController" customModule="ScreenSwap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wYI-H3-P0B"/>
+                        <viewControllerLayoutGuide type="bottom" id="KV3-7c-s5V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rVY-dq-XCK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G49-AN-4le">
+                                <rect key="frame" x="148.5" y="20" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="G49-AN-4le" firstAttribute="top" secondItem="wYI-H3-P0B" secondAttribute="bottom" id="JLZ-bY-xQj"/>
+                            <constraint firstItem="G49-AN-4le" firstAttribute="centerX" secondItem="rVY-dq-XCK" secondAttribute="centerX" id="eAz-AS-c49"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="songTitleLabel" destination="G49-AN-4le" id="nam-7a-O2g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VnH-Hc-8t9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1604" y="26"/>
         </scene>
     </scenes>
 </document>

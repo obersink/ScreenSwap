@@ -13,6 +13,7 @@
 		8C146E501E94BCBC00D5B982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C146E4F1E94BCBC00D5B982 /* Assets.xcassets */; };
 		8C146E531E94BCBC00D5B982 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C146E511E94BCBC00D5B982 /* LaunchScreen.storyboard */; };
 		8C146E5D1E94BE4800D5B982 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C146E5C1E94BE4800D5B982 /* MusicViewController.swift */; };
+		8C146E5F1E94C41100D5B982 /* PlaySongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C146E5E1E94C41100D5B982 /* PlaySongViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8C146E521E94BCBC00D5B982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C146E541E94BCBC00D5B982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C146E5C1E94BE4800D5B982 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		8C146E5E1E94C41100D5B982 /* PlaySongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySongViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				8C146E511E94BCBC00D5B982 /* LaunchScreen.storyboard */,
 				8C146E541E94BCBC00D5B982 /* Info.plist */,
 				8C146E5C1E94BE4800D5B982 /* MusicViewController.swift */,
+				8C146E5E1E94C41100D5B982 /* PlaySongViewController.swift */,
 			);
 			path = ScreenSwap;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				8C146E5D1E94BE4800D5B982 /* MusicViewController.swift in Sources */,
 				8C146E4B1E94BCBC00D5B982 /* LoginViewController.swift in Sources */,
 				8C146E491E94BCBC00D5B982 /* AppDelegate.swift in Sources */,
+				8C146E5F1E94C41100D5B982 /* PlaySongViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
